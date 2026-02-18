@@ -47,6 +47,38 @@
 
 ---
 
+**## ⚠️ Challenges Faced**
+
+Realtime DELETE events not syncing across tabs
+
+TypeScript typing issues with Supabase Realtime payloads
+
+Duplicate bookmark race conditions
+
+OAuth redirect misconfiguration in production
+
+Vercel build failures due to missing environment variables
+
+Enforcing strict per-user data isolation with RLS
+
+---
+
+**## ✅ Solutions Implemented**
+
+Enabled REPLICA IDENTITY FULL for proper realtime delete tracking
+
+Derived strict types from Supabase Database schema
+
+Added UNIQUE (user_id, url) constraint to prevent duplicates
+
+Corrected OAuth flow configuration (Google → Supabase → App)
+
+Configured environment variables properly in Vercel
+
+Implemented secure Row Level Security policies
+
+---
+
 ## 🔐 Security Architecture
 
 - UUID Primary Keys
