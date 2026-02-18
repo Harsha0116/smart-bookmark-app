@@ -47,7 +47,7 @@
 
 ---
 
-**## ⚠️ Challenges Faced**
+## ⚠️ Challenges Faced
 
 Realtime DELETE events not syncing across tabs
 
@@ -63,7 +63,7 @@ Enforcing strict per-user data isolation with RLS
 
 ---
 
-**## ✅ Solutions Implemented**
+## ✅ Solutions Implemented
 
 Enabled REPLICA IDENTITY FULL for proper realtime delete tracking
 
