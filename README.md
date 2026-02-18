@@ -1,36 +1,106 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🔖 Smart Bookmark App
 
-## Getting Started
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 
-First, run the development server:
+> A production-ready, real-time bookmark manager built with Next.js, Supabase, and Vercel.
+
+---
+
+## 🌐 Live Demo
+
+🚀 https://smart-bookmark-app-pi-lemon.vercel.app
+
+---
+
+## ✨ Features
+
+- 🔐 Google OAuth Authentication
+- 🔒 Private user bookmarks (Row Level Security)
+- ⚡ Real-time multi-tab sync
+- 🚫 Duplicate URL prevention
+- 🌙 Dark neon UI
+- 🖼 Website preview thumbnails
+- 📱 Fully responsive design
+- 🚀 Production deployed on Vercel
+
+---
+
+## 🛠 Tech Stack
+
+**Frontend**
+- Next.js 14+ (App Router)
+- TypeScript
+- Tailwind CSS
+- Zustand
+- React Hot Toast
+
+**Backend**
+- Supabase (PostgreSQL + Auth + Realtime)
+- Row Level Security (RLS)
+
+**Deployment**
+- Vercel
+- GitHub
+
+---
+
+## 🔐 Security Architecture
+
+- UUID Primary Keys
+- Unique constraint on `(user_id, url)`
+- RLS policies enforce per-user data isolation
+- Supabase Realtime filtered by user_id
+
+---
+
+## ⚡ Real-Time Behavior
+
+- INSERT sync across tabs
+- DELETE sync across tabs
+- UPDATE sync across tabs
+- Replica identity FULL enabled for delete tracking
+
+---
+
+## 🧑‍💻 Local Setup
 
 ```bash
+git clone https://github.com/Harsha0116/smart-bookmark-app.git
+cd smart-bookmark-app
+npm install
+Create .env.local:
+
+NEXT_PUBLIC_SUPABASE_URL=your_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_key
+Run:
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+🚀 Production Deployment
+Deployed using:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+vercel --prod
+OAuth configured in:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Supabase Authentication Settings
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Google Cloud Console
 
-## Learn More
+🏆 What This Project Demonstrates
+Full-stack production architecture
 
-To learn more about Next.js, take a look at the following resources:
+Secure multi-tenant database design
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+OAuth implementation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Realtime WebSocket integration
 
-## Deploy on Vercel
+Type-safe Supabase integration
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+CI/CD deployment via Vercel
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+👨‍💻 Author
+Harsha Vardhan
+GitHub: https://github.com/Harsha0116
