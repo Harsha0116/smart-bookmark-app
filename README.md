@@ -104,5 +104,5 @@ CI/CD deployment via Vercel
 
 ---
 
-👨‍💻 Author
+👨‍💻 Author:
 Harsha Vardhan🖤
