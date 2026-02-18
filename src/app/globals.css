@@ -1,8 +1,15 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0d0d0d;
+  --foreground: #f5f5f5;
+  --rose-red: #e11d48;
+  --rose-red-dark: #9f1239;
+  --neon-border: #fb7185;
+  --card-bg: #1a1a1a;
+  --nav-bg: #111111;
+  --input-bg: #1f1f1f;
+  --muted: #6b7280;
 }
 
 @theme inline {
@@ -12,15 +19,35 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+/* Neon glow border for bookmark cards */
+.neon-card {
+  border: 1px solid var(--neon-border);
+  box-shadow: 0 0 8px rgba(251, 113, 133, 0.4), 0 0 20px rgba(225, 29, 72, 0.15);
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.neon-card:hover {
+  box-shadow: 0 0 14px rgba(251, 113, 133, 0.7), 0 0 35px rgba(225, 29, 72, 0.35);
+  transform: translateY(-2px);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--rose-red-dark);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--rose-red);
 }
