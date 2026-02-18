@@ -71,24 +71,22 @@
 git clone https://github.com/Harsha0116/smart-bookmark-app.git
 cd smart-bookmark-app
 npm install
-Create .env.local:
 
+-Create .env.local:
 NEXT_PUBLIC_SUPABASE_URL=your_url
 NEXT_PUBLIC_SUPABASE_ANON_KEY=your_key
-Run:
 
+-Run:
 npm run dev
-🚀 Production Deployment
-Deployed using:
+```
+## 🚀 Deployment
 
-vercel --prod
-OAuth configured in:
+- ▲ Vercel (Production Hosting)
+- 🐙 GitHub (Version Control)
 
-Supabase Authentication Settings
-
-Google Cloud Console
 
 🏆 What This Project Demonstrates
+
 Full-stack production architecture
 
 Secure multi-tenant database design
@@ -102,5 +100,4 @@ Type-safe Supabase integration
 CI/CD deployment via Vercel
 
 👨‍💻 Author
-Harsha Vardhan
-GitHub: https://github.com/Harsha0116
+Harsha Vardhan🖤
