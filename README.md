@@ -79,11 +79,14 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=your_key
 -Run:
 npm run dev
 ```
+---
+
 ## 🚀 Deployment
 
 - ▲ Vercel (Production Hosting)
 - 🐙 GitHub (Version Control)
 
+---
 
 🏆 What This Project Demonstrates
 
@@ -98,6 +101,8 @@ Realtime WebSocket integration
 Type-safe Supabase integration
 
 CI/CD deployment via Vercel
+
+---
 
 👨‍💻 Author
 Harsha Vardhan🖤
